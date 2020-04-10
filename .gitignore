@@ -96,3 +96,5 @@ addons/prometheus-operator/tmp # cloned git repo
 
 # Used by some of the verify scripts in the hack directory
 _output
+# vendor
+./vendor
