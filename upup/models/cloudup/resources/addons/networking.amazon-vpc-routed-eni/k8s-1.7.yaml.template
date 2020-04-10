@@ -67,7 +67,7 @@ spec:
       tolerations:
       - operator: Exists
       containers:
-      - image: "{{- or .Networking.AmazonVPC.ImageName "602401143452.dkr.ecr.us-west-2.amazonaws.com/amazon-k8s-cni:1.3.3" }}"
+      - image: registry.cn-hangzhou.aliyuncs.com/luqel-water/amazon-k8s-cni:v1.5.0
         ports:
         - containerPort: 61678
           name: metrics

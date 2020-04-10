@@ -113,7 +113,7 @@ spec:
           beta.kubernetes.io/os: linux
       containers:
       - name: coredns
-        image: {{ if KubeDNS.CoreDNSImage }}{{ KubeDNS.CoreDNSImage }}{{ else }}k8s.gcr.io/coredns:1.6.7{{ end }}
+        image: registry.cn-hangzhou.aliyuncs.com/kube-iamges/coredns:1.6.5
         imagePullPolicy: IfNotPresent
         resources:
           limits:

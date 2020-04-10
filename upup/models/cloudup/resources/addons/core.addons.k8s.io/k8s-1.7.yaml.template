@@ -118,7 +118,7 @@ spec:
       - name: cloud-controller-manager
         # for in-tree providers we use k8s.gcr.io/cloud-controller-manager
         # this can be replaced with any other image for out-of-tree providers
-        image: k8s.gcr.io/cloud-controller-manager:v{{ .KubernetesVersion }}  # Reviewers: Will this work?
+        image: registry.cn-hangzhou.aliyuncs.com/google-containers/cloud-controller-manager-amd64:v1.9.3.16-gcc144c7-aliyun  # Reviewers: Will this work?
         command:
         - /usr/local/bin/cloud-controller-manager
         - --cloud-provider={{ .CloudProvider }}
